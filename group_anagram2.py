@@ -14,6 +14,8 @@ class Solution:
         hash_table = defaultdict(list)
         
         for i in strs:
+            ''' using this iteration instead of len(strs)
+            improves time complexity of your code'''
             count = [0] * 26
             
             for j in i:
